@@ -1,0 +1,23 @@
+<table>
+  <thead>
+    <tr>
+      <th>ID</th><th>First</th><th>Last</th><th>Email</th><th>Dept</th><th>Role</th><th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <#list employees as emp>
+    <tr>
+      <td>${emp.id}</td>
+      <td>${emp.firstName}</td>
+      <td>${emp.lastName}</td>
+      <td>${emp.email}</td>
+      <td>${emp.department}</td>
+      <td>${emp.role}</td>
+      <td>
+        <button>Edit</button>
+        <button>Delete</button>
+      </td>
+    </tr>
+    </#list>
+  </tbody>
+</table>

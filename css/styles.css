@@ -1,0 +1,185 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+.branding {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #CAF1DE;
+  flex-wrap: wrap;
+}
+
+header {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.header-right {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+header input {
+  padding: 8px 10px;
+  border-radius: 4px;
+  border: none;
+  width: 250px;
+  max-width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  flex-wrap: wrap;
+}
+
+.green-btn {
+  background-color: #28a745;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+}
+
+.main {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+  background-image: url("https://www.employmenthelp.org/wp-content/uploads/Seccond-Career-Header-Background-1030x404.png");
+  background-size: cover;
+  flex-wrap: wrap;
+}
+
+#employeeContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  flex: 1;
+  background-color: black;
+  padding: 20px;
+  border-radius: 6px;
+  justify-content: center;
+}
+
+.card {
+  position: relative;
+  width: 250px;
+  padding: 15px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: url("https://www.employmenthelp.org/wp-content/uploads/Seccond-Career-Header-Background-1030x404.png") no-repeat center center;
+  background-size: cover;
+  color: black;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+  border: 1px solid #ccc;
+}
+
+.card h3,
+.card p {
+  margin: 6px 0;
+  font-size: 14px;
+}
+
+.card-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.card-actions button {
+  background: rgba(255, 255, 255, 0.9);
+  color: #000;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+aside {
+  width: 250px;
+  background: #f4f4f4;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  height: fit-content;
+}
+
+aside h3 {
+  margin-top: 0;
+}
+
+aside input {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+}
+
+footer {
+  background-color: #1a1a1a;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* -------------------- RESPONSIVE -------------------- */
+
+@media screen and (max-width: 1024px) {
+  .main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .toolbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header-right {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  aside {
+    width: 100%;
+    order: -1;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    width: 90%;
+  }
+
+  header,
+  .toolbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header input {
+    width: 100%;
+  }
+}

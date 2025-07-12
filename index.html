@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Employee Directory</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- JACKUS Branding and Info -->
+  <div class="branding">
+    <img src="assets/logo.jpg" alt="Jackus Logo" height="50">
+    <p>For more information visit <a href="https://www.ajackus.com" target="_blank">www.ajackus.com</a></p>
+  </div>
+  <hr />
+
+  <!-- Header Section -->
+  <header>
+    <h1>Employee Directory</h1>
+    <div class="header-right">
+      <input type="text" id="search" placeholder="Search by name or email" />
+      <button id="filterToggle">Filter</button>
+    </div>
+  </header>
+
+  <!-- Sorting + Add Employee -->
+  <div class="toolbar">
+    <div>
+      Sort:
+      <select id="sortBy">
+        <option value="">--Select--</option>
+        <option value="firstName">First Name</option>
+        <option value="department">Department</option>
+        <option value="department">Role</option>
+      </select>
+      Show:
+      <select id="perPage">
+        <option>10</option>
+        <option>25</option>
+        <option>50</option>
+        <option>100</option>
+      </select>
+    </div>
+    <button id="addEmployeeBtn" class="green-btn">Add Employee</button>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main">
+    <div id="employeeContainer"></div>
+
+    <!-- Hidden by default -->
+    <aside id="filterSidebar" class="hidden">
+      <h3>Filter Employees</h3>
+      <input type="text" id="filterFirstName" placeholder="First Name" />
+      <input type="text" id="filterDept" placeholder="Department" />
+      <input type="text" id="filterRole" placeholder="Role" />
+      <button id="applyFilter">Apply</button>
+      <button id="resetFilter">Reset</button>
+    </aside>
+  </div>
+
+  <div id="pagination" style="text-align:center; padding: 15px;"></div>
+
+  <footer>
+    <p>© 2025 Employee Directory App. All rights reserved.</p>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/ui.js"></script>
+</body>
+</html>
